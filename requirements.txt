@@ -1,0 +1,23 @@
+# Core BDD and PBT
+behave==1.2.6
+hypothesis==6.108.0
+
+# Metrics and Evaluation
+nltk==3.8.1  # For BLEU, ROUGE, etc.
+datasets==2.20.0  # For benchmarks like MMLU
+fairlearn==0.10.0  # Bias/fairness metrics
+joblib==1.4.2  # Parallelism/caching
+
+# LLM Wrappers and Judges
+langchain==0.3.27  # For chains/prompting in LLM-as-judge (optional, but useful for rubrics)
+openai==1.40.0  # Multi-model support (e.g., GPT); add others like anthropic later
+langfuse==2.38.0  # Observability/tracing
+
+# Utilities
+python-dotenv==1.0.1  # For .env loading
+cachetools==5.4.0  # Caching for PBT/evals
+
+# Later additions (commented for now; uncomment in Phase 3)
+# streamlit==1.37.0  # Dashboard
+# pytest==8.3.2  # Unit tests
+# docker==7.1.0  # If needed for scripting
